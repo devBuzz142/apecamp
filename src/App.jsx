@@ -1,4 +1,10 @@
 import styled from "@emotion/styled";
+import ArduinoPage from "./pages/ArduinoPage";
+import HamelinPage from "./pages/HamelinPage";
+import CodeplayPage from "./pages/CodeplayPage";
+import ArtPage from "./pages/ArtPage";
+import EngineeringPage from "./pages/EngineeringPage";
+import CvPage from "./pages/CvPage";
 
 const AppSection = styled.div`
   width: 100%;
@@ -35,11 +41,12 @@ function App() {
   return (
     <AppSection>
       <MainSection>
-        <h1>학습하는 기계를 통해, 방황하는 인간을 탐구하는 정종관입니다.</h1>
-        <h2>반갑습니다</h2>
-        <div>hello</div>
-        <video src="/src/assets/arduino01.mp4" loop autoPlay width={720} />
-        <video src="/src/assets/arduino02.mp4" loop autoPlay width={360} />
+        <CvPage />
+        <ArduinoPage />
+        <HamelinPage />
+        <CodeplayPage />
+        <ArtPage />
+        <EngineeringPage />
       </MainSection>
     </AppSection>
   );
