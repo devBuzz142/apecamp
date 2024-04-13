@@ -10,7 +10,16 @@ const PageContainer = styled.div`
   padding-bottom: 24px;
 
   display: flex;
-  flex-direction: column;
+`;
+
+export const PageLeftSection = styled.div`
+  width: 100%;
+  max-width: 50%;
+`;
+
+export const PageRightSection = styled.div`
+  width: 100%;
+  max-width: 50%;
 `;
 
 const Page = ({ children }) => {

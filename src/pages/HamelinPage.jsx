@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Page from "./Page";
+import Page, { PageLeftSection, PageRightSection } from "./Page";
 
 const XScrollBox = styled.div`
   display: flex;
@@ -7,31 +7,39 @@ const XScrollBox = styled.div`
   overflow-x: auto;
 `;
 
+const hamelinImages = Array.from(
+  { length: 32 },
+  (_, i) =>
+    `/src/assets/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
+);
+
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+`;
+
 const HamelinPage = () => {
+  console.log(hamelinImages);
   return (
     <Page>
-      <h1>Hamelin</h1>
-      <div>
-        하멜린을 하면서 생성 이미지 활용하였습니다. 이를 통해 --할 수
-        있었습니다.
-      </div>
-      <XScrollBox>
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-        <img src="/src/assets/hamelin/hamelin01.png" width={720} />
-      </XScrollBox>
+      <PageLeftSection>
+        <h1>Hamelin</h1>
+        <div>
+          하멜린을 하면서 생성 이미지 활용하였습니다. 이를 통해 --할 수
+          있었습니다.
+        </div>
+      </PageLeftSection>
+      <PageRightSection>
+        <XScrollBox>
+          {hamelinImages.map((src, i) => (
+            <ImageWrapper key={i}>
+              <img key={i} src={src} width={660} />
+            </ImageWrapper>
+          ))}
+        </XScrollBox>
+      </PageRightSection>
     </Page>
   );
 };
