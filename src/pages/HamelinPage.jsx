@@ -9,8 +9,7 @@ const XScrollBox = styled.div`
 
 const hamelinImages = Array.from(
   { length: 32 },
-  (_, i) =>
-    `/src/assets/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
+  (_, i) => `/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
 );
 
 const ImageWrapper = styled.div`
