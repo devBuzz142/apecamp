@@ -7,7 +7,10 @@ import EngineeringPage from "./pages/EngineeringPage";
 import CvPage from "./pages/CvPage";
 import Page, { PageLeftSection, PageRightSection } from "./pages/Page";
 
-const AppSection = styled.div`
+import { Modal, Button } from "@mui/material";
+import { useState } from "react";
+
+const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
 
@@ -38,11 +41,40 @@ const MainSection = styled.main`
   padding-right: 48px;
 `;
 
+const ModalContent = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 160px;
+
+  width: 400px;
+  min-height: 320px;
+
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 20px;
+`;
+
 function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const handleModalOpen = () => setModalOpen(true);
+  const handleModalClose = () => setModalOpen(false);
+
   return (
-    <AppSection>
+    <AppContainer>
+      <Button onClick={handleModalOpen} variant="contained">
+        Open Modal
+      </Button>
+      <Modal open={modalOpen} onClose={handleModalClose}>
+        <ModalContent>Modal Content</ModalContent>
+      </Modal>
       <MainSection>
-        <h1>학습하는 기계를 통해, 방황하는 인간을 탐구하는 정종관입니다.</h1>
+        <h1>
+          학습하는 기계를 통해, 방황하는 인간을 탐구하는 정종관입니다. (개발자명
+          : Buzz)
+        </h1>
+        <h2>As an artist, marong142@gmail.com</h2>
+        <h2>As a programmer, devbuzz142@gmail.com | github.com/@devbuzz142</h2>
+        <h2>Based in Seoul, Korea</h2>
         <CvPage />
         <ArduinoPage />
         <HamelinPage />
@@ -67,7 +99,7 @@ function App() {
           <PageRightSection>사진하나?</PageRightSection>
         </Page>
       </MainSection>
-    </AppSection>
+    </AppContainer>
   );
 }
 

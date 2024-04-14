@@ -18,6 +18,9 @@ const ImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2px;
+
+  border: 4px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 24;
 `;
 
 const HamelinPage = () => {
