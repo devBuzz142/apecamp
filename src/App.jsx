@@ -7,9 +7,6 @@ import EngineeringPage from "./pages/EngineeringPage";
 import CvPage from "./pages/CvPage";
 import Page, { PageLeftSection, PageRightSection } from "./pages/Page";
 
-import { Modal, Button } from "@mui/material";
-import { useState } from "react";
-
 const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -55,18 +52,8 @@ const ModalContent = styled.div`
 `;
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const handleModalOpen = () => setModalOpen(true);
-  const handleModalClose = () => setModalOpen(false);
-
   return (
     <AppContainer>
-      <Button onClick={handleModalOpen} variant="contained">
-        Open Modal
-      </Button>
-      <Modal open={modalOpen} onClose={handleModalClose}>
-        <ModalContent>Modal Content</ModalContent>
-      </Modal>
       <MainSection>
         <h1>
           ‘자기 정의’에 대해 인공지능을 활용하여 연극을 만드는 정종관입니다.
