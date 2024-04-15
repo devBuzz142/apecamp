@@ -9,7 +9,7 @@ const XScrollBox = styled.div`
 
 const hamelinImages = Array.from(
   { length: 32 },
-  (_, i) => `/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
+  (_, i) => `/assets/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
 );
 
 const ImageWrapper = styled.div`
@@ -23,7 +23,6 @@ const ImageWrapper = styled.div`
 `;
 
 const HamelinPage = () => {
-  console.log(hamelinImages);
   return (
     <Page>
       <PageLeftSection>

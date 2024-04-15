@@ -14,7 +14,7 @@ const AppContainer = styled.div`
   width: 100%;
   height: 100vh;
 
-  background-image: url("/src/assets/apecamp.jpg");
+  background-image: url("/assets/apecamp.jpg");
   background-size: 1020px;
   background-position-x: -50%;
   background-position-y: -36px;
