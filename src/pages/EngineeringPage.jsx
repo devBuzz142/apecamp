@@ -1,10 +1,14 @@
-import Page from "./Page";
+import Page, { PageLeftSection, PageRightSection } from "./Page";
 
 const EngineeringPage = () => {
   return (
     <Page>
-      <h1>Engineering</h1>
-      <div>Engineering here</div>
+      <PageLeftSection>
+        <h1>Engineering</h1>
+        <br />
+        <div>Engineering here</div>
+      </PageLeftSection>
+      <PageRightSection></PageRightSection>
     </Page>
   );
 };

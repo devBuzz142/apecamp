@@ -15,11 +15,17 @@ const PageContainer = styled.div`
 export const PageLeftSection = styled.div`
   width: 100%;
   max-width: 50%;
+
+  padding-left: 24px;
+  padding-right: 24px;
 `;
 
 export const PageRightSection = styled.div`
   width: 100%;
   max-width: 50%;
+
+  padding-left: 24px;
+  padding-right: 24px;
 `;
 
 const Page = ({ children }) => {

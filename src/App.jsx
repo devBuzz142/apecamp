@@ -6,6 +6,7 @@ import ArtPage from "./pages/ArtPage";
 import EngineeringPage from "./pages/EngineeringPage";
 import CvPage from "./pages/CvPage";
 import Page, { PageLeftSection, PageRightSection } from "./pages/Page";
+import LastPage from "./pages/LastPage";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -62,25 +63,9 @@ function App() {
         <ArduinoPage />
         <HamelinPage />
         <CodeplayPage />
-        <ArtPage />
-        <EngineeringPage />
-        <Page>
-          <PageLeftSection>
-            <h1>마무리 멘트 필요</h1>
-            <div>
-              Codeplay외에 기술을 예술분야에 적용시켜 본 경험이 아직 부족합니다.
-            </div>
-            <div>
-              작년까지 기술 공부 후 올해 본격적으로 작업 시작해서 전반기까진
-              없습니다.
-            </div>
-            <div>
-              그러나 본 과정을 통해 많은 살마들과 얘기를 나누고 싶어서,
-              지원했습니다. 감사합니다.
-            </div>
-          </PageLeftSection>
-          <PageRightSection>사진하나?</PageRightSection>
-        </Page>
+        {/* <ArtPage />
+        <EngineeringPage /> */}
+        <LastPage />
       </MainSection>
     </AppContainer>
   );
