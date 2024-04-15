@@ -9,27 +9,16 @@ const ImageWrapper = styled.div`
   height: 100%;
 `;
 
-const Header = styled.div`
-  // same as h1
-  font-size: 2rem;
-  font-weight: bold;
-
-  display: flex;
-`;
-
-const BlueWrapper = styled.p`
-  color: blue;
-  margin-left: 10px;
-  margin-right: 10px;
-`;
-
 const LastPage = () => {
+  // 적극적인 한 명의 APE가 되겠습니다.
+  // APE만 파란색으로
   return (
     <Page>
       <PageLeftSection>
-        <Header>
-          적극적인 한 명의 <BlueWrapper>APE</BlueWrapper>가 되겠습니다.
-        </Header>
+        <h1>
+          적극적인 한 명의 <span style={{ color: "blue" }}>APE</span>가
+          되겠습니다.
+        </h1>
         <br />
         <div>
           {"<"}Codeplay{">"} 외에 기술을 예술분야에 적용시켜 본 경험이 아직

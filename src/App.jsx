@@ -57,7 +57,10 @@ function App() {
     <AppContainer>
       <MainSection>
         <h1>
-          ‘자기 정의’에 대해 인공지능을 활용하여 연극을 만드는 정종관입니다.
+          <span style={{ color: "blue", marginRight: 4 }}>‘자기 정의’</span>에
+          대해 인공지능을 활용하여 연극을 만드는{" "}
+          <span style={{ color: "blue", marginRight: 4 }}>정종관</span>
+          입니다.
         </h1>
         <CvPage />
         <ArduinoPage />
