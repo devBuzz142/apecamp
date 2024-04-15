@@ -77,6 +77,7 @@ const HamelinPage = () => {
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           />
         </ImageWrapper>
+        <br />
         <PaginationWrapper>
           <PaginationButtons page={currentImage} setPage={setCurrentImage} />
         </PaginationWrapper>
