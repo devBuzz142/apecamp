@@ -1,5 +1,6 @@
 import HashTag from "../components/HashTag";
 import Page, { PageLeftSection, PageRightSection } from "./Page";
+import YouTube from "react-youtube";
 
 const CodeplayPage = () => {
   return (
@@ -35,7 +36,7 @@ const CodeplayPage = () => {
         </div>
       </PageLeftSection>
       <PageRightSection>
-        <img src="/assets/codeplay01.png" alt="Codeplay" width={720} />
+        <YouTube videoId="PThn811Lli8" />
       </PageRightSection>
     </Page>
   );
