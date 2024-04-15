@@ -37,14 +37,14 @@ const ArduinoPage = () => {
             loop
             autoPlay
             muted
-            width={360}
+            width={320}
           />
           <video
             src="/assets/arduino/arduino02.mp4"
             loop
             autoPlay
             muted
-            width={240}
+            width={220}
           />
         </VideoContainer>
       </PageRightSection>
