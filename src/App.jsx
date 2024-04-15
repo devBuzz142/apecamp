@@ -69,12 +69,8 @@ function App() {
       </Modal>
       <MainSection>
         <h1>
-          학습하는 기계를 통해, 방황하는 인간을 탐구하는 정종관입니다. (개발자명
-          : Buzz)
+          ‘자기 정의’에 대해 인공지능을 활용하여 연극을 만드는 정종관입니다.
         </h1>
-        <h2>As an artist, marong142@gmail.com</h2>
-        <h2>As a programmer, devbuzz142@gmail.com | github.com/@devbuzz142</h2>
-        <h2>Based in Seoul, Korea</h2>
         <CvPage />
         <ArduinoPage />
         <HamelinPage />
