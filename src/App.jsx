@@ -10,7 +10,6 @@ import LastPage from "./pages/LastPage";
 
 const AppContainer = styled.div`
   width: 100%;
-  height: 100vh;
 
   background-image: url("/assets/apecamp.jpg");
   background-size: 1020px;
@@ -23,11 +22,15 @@ const AppContainer = styled.div`
   padding-right: 120px;
 
   overflow-y: scroll;
+
+  display: flex;
+  justify-content: center;
 `;
 
 const MainSection = styled.main`
   background-color: rgba(255, 255, 255);
   width: 100%;
+  max-width: 1680px;
   min-height: 360px;
 
   border-radius: 20px;

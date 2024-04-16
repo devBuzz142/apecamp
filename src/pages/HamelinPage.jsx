@@ -8,7 +8,6 @@ const hamelinImages = Array.from(
   { length: 32 },
   (_, i) => `/assets/hamelin/hamelin-` + String(i + 1).padStart(2, "0") + `.jpg`
 );
-
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
