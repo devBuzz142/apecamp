@@ -15,6 +15,7 @@ const PageContainer = styled.div`
 export const PageLeftSection = styled.div`
   width: 100%;
   max-width: 50%;
+  height: 100%;
 
   padding-left: 24px;
   padding-right: 24px;
@@ -23,6 +24,7 @@ export const PageLeftSection = styled.div`
 export const PageRightSection = styled.div`
   width: 100%;
   max-width: 50%;
+  height: 100%;
 
   padding-left: 24px;
   padding-right: 24px;
