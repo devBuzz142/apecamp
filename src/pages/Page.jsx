@@ -10,24 +10,30 @@ const PageContainer = styled.div`
   padding-bottom: 24px;
 
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const PageLeftSection = styled.div`
-  width: 100%;
-  max-width: 50%;
+  width: 50%;
+  max-width: 840px;
+  min-width: 320px;
   height: 100%;
 
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 `;
 
 export const PageRightSection = styled.div`
-  width: 100%;
+  width: 50%;
   max-width: 50%;
+  max-width: 840px;
+  min-width: 320px;
   height: 100%;
 
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 `;
 
 const Page = ({ children }) => {

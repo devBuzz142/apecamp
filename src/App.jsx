@@ -2,10 +2,7 @@ import styled from "@emotion/styled";
 import ArduinoPage from "./pages/ArduinoPage";
 import HamelinPage from "./pages/HamelinPage";
 import CodeplayPage from "./pages/CodeplayPage";
-import ArtPage from "./pages/ArtPage";
-import EngineeringPage from "./pages/EngineeringPage";
 import CvPage from "./pages/CvPage";
-import Page, { PageLeftSection, PageRightSection } from "./pages/Page";
 import LastPage from "./pages/LastPage";
 
 const AppContainer = styled.div`
@@ -40,19 +37,6 @@ const MainSection = styled.main`
   padding-bottom: 36px;
   padding-left: 48px;
   padding-right: 48px;
-`;
-
-const ModalContent = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 160px;
-
-  width: 400px;
-  min-height: 320px;
-
-  background-color: white;
-  border: 2px solid #000;
-  border-radius: 20px;
 `;
 
 function App() {
